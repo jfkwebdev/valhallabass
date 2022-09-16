@@ -1,0 +1,13 @@
+body {
+    background-color: grey;
+    background-image: url(./layingitdown_files/288445756_140166738334826_185969135945744013_n.jpg);
+    mix-blend-mode: screen;
+}
+h1 {
+    color: red;
+    font-size: 250px;
+}
+#link-list a {
+    font-size: 100px;
+    color: whitesmoke;
+}
