@@ -1,6 +1,7 @@
 body {
     background-color: grey;
     background-image: url(./layingitdown_files/288445756_140166738334826_185969135945744013_n.jpg);
+    background-size: cover;
     mix-blend-mode: screen;
 }
 h1 {
