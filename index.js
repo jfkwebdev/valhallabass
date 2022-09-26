@@ -1,16 +1,22 @@
-const linklist = document.querySelector('#link-list');
-const bandcamp = 'https://valhallabass.bandcamp.com/album/by-the-magnolia'
-const insta = 'http://instagram.com/valhallabass'
-const tiktok = 'https://www.tiktok.com/@valhalla_bass'
+const header = document.querySelector('#header');
+const chronicleButton = document.querySelector('#me');
+const logo = document.querySelector('.logo', 'a');
+const iframe = document.querySelector('iframe')
 
-linklist.innerHTML =
-    `<ul>
-        <li><a href="${bandcamp}">Discography</a></li>
-        <li><a href="${insta}">Instagram</a></li>
-        <li><a href="${tiktok}">TikTok</a></li>
-    </ul>
-    `;
 
-    //second ackground image , url(./layingitdown_files/287979606_3172554536322667_3956443757411855216_n.jpg)
+function meHeader() {
+        header.innerHTML = `<img src="content/basswalksmile.jpg"/>`;
+        console.log('changedheader');
+}
 
-    
+function indexHeader() {
+    header.innerHTML = `<img src="content/vikinghat1.jpg"/>`;
+}
+
+function stopYT() {
+    iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', 
+  func: 'stopVideo' }), '*');
+}
+
+chronicleButton.addEventListener("click", meHeader);
+logo.addEventListener("click", indexHeader);
