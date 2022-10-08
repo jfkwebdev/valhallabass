@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="public/stylesheets/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <nav>
     <div class="navbar">
         <input type="checkbox" id="nav-check" />
         <div class="logo">
-            <a><image id="valhallabass" src="valhallabass.svg"/></a>
+            <a><image id="valhallabass" src="public/media/icon/valhallabass.svg"/></a>
         </div>        
         <div class="nav-butt">
                 <label for="nav-check" class="hamburger">&#9776;</label>
         </div>
         <div class="nav-links">
                 <a target="_blank" href="https://valhallabass.bandcamp.com/album/by-the-magnolia">Discography</a>
-                <a target="_blank" href="${merch}">Merchandise</a>
+                <a target="_blank" href="https://valhallabass.threadless.com">Merchandise</a>
                 <a id="me" href="#">Chronicle</a>
                 <div class="icon">
-                    <a target="_blank" href="https://www.tiktok.com/@valhalla_bass" class="icon--tiktok icon"><img src="clock.svg"/></a>
-                    <a target="_blank" href="http://instagram.com/valhallabass" class="icon--insta icon"><img src="instagram.svg"/></a>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCUHVABouPUKR4fS9lWZt7NA" class="icon--youtube icon"><img src="youtube.svg"/></a>
-                </div>
-            
+                    <a target="_blank" href="https://www.tiktok.com/@valhalla_bass" class="icon--tiktok icon"><img src="public/media/icon/clock.svg"/></a>
+                    <a target="_blank" href="https://instagram.com/valhallabass" class="icon--insta icon"><img src="public/media/icon/instagram.svg"/></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCUHVABouPUKR4fS9lWZt7NA" class="icon--youtube icon"><img src="public/media/icon/youtube.svg"/></a>
+                </div>  
         </div>
     </div>
+    </nav>
     <body>
-        <div id="header">
-            <img src="content/vikinghat1.jpg"/>
+        <div class="big-gap"></div>
+        <div class="header">
+            <img src="public/media/vikinghat1.jpg"/>
+            <img id="logo" src="public/media/icon/logo.svg">
         </div>
+        <div class="lil-gap"></div>
         <div id="audio">
             <audio controls>
-            <source src="Excalibur.wav" type="audio/wav">
+            <source src="public/media/Excalibur.wav" type="audio/wav">
             Your browser does not support the audio element
             </audio>
         </div>

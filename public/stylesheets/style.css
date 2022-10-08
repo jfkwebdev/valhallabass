@@ -1,13 +1,13 @@
 /*Fonts*/
 
 @font-face {
-    src: url(fonts/norse-font/Norse-KaWl.otf);
+    src: url(../media/fonts/norse-font/Norse-KaWl.otf);
     font-family: norse;
 }
 
 @font-face {
     font-family: nordika;
-    src: url(fonts/nordica-font/Nordicablack-Xa39.otf);
+    src: url(../media/fonts/nordica-font/Nordicablack-Xa39.otf);
 }
 
 /* Sweet icon hover thing */
@@ -61,19 +61,33 @@ a:active {
 
 body {
     background-image: linear-gradient(90deg,#D42000 1%, #1A1919 2%, #1A1919 98%, #D42000 99%);
-    background-repeat: no-repeat;
+    
 }
-
-#header{
-    margin-top: 170px;
-    margin-bottom: 50px;
+.big-gap{
+    height: 170px;
+    width: 100%;
+}
+.lil-gap{
+    height: 50px;
+    width: 100%;
+}
+.header{
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 450px;
 }
-#header img{
-    max-width: 666px;
+.header img{
+    max-width: 800px;
     object-fit: contain;
     width: 100%;
+    position: absolute;
+}
+
+#logo {
+    height: 300px;
+    top: 90px;
+    mix-blend-mode:difference;
 }
 
 .container {
@@ -89,6 +103,12 @@ body {
     padding: 3%;
     display:block;
     justify-content: center;
+}
+
+#audio {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
 
 .column img, iframe {
@@ -198,18 +218,20 @@ ul {
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 75px;
+        top: 100px;
         left: 0px;
+        z-index: 4;
     }
     .navbar .nav-links a {
         display: block;
         width: 100%;
+        font-size: 40px;
     }
     .navbar #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
     }
     .navbar #nav-check:checked ~ .nav-links {
-        height: calc(66vh - 120px);
+        height: calc(40vh - 120px);
         overflow-y: auto;
     }
     .navbar .nav-links .icon {
@@ -217,12 +239,19 @@ ul {
         padding: 25px 10px 5px 40px;
         align-self: center;
     }
+
+    #valhallabass{
+        height: 100px;
+    }
+    .column p {
+        font-size: 40px;
+    }
+    #audio {
+        height: 40px;
+    }
 }
 
-#audio {
-    display: flex;
-    justify-content: center;
-}
+
 
 
 
