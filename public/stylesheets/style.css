@@ -75,19 +75,20 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 450px;
+    height: 500px;
 }
 .header img{
     max-width: 800px;
     object-fit: contain;
     width: 100%;
     position: absolute;
+    height: inherit;
 }
 
 #logo {
-    height: 300px;
-    top: 90px;
+    height: 20em;
     mix-blend-mode:difference;
+    align-self: center;
 }
 
 .container {
@@ -231,7 +232,7 @@ ul {
         height: 0px;
     }
     .navbar #nav-check:checked ~ .nav-links {
-        height: calc(40vh - 120px);
+        height: calc(60vh );
         overflow-y: auto;
     }
     .navbar .nav-links .icon {
