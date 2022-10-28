@@ -232,7 +232,7 @@ ul {
         height: 0px;
     }
     .navbar #nav-check:checked ~ .nav-links {
-        height: calc(60vh );
+        height: 100%;
         overflow-y: auto;
     }
     .navbar .nav-links .icon {
@@ -245,7 +245,7 @@ ul {
         height: 66px;
     }
     .column p {
-        font-size: 40px;
+        font-size: 33px;
     }
     #audio {
         height: 40px;
