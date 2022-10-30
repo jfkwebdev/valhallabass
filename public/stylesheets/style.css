@@ -104,6 +104,7 @@ body {
     padding: 3%;
     display:block;
     justify-content: center;
+    color: white;
 }
 
 #audio {
@@ -249,6 +250,49 @@ ul {
     }
     #audio {
         height: 40px;
+    }
+}
+#scroll-container {
+    border: 3px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    height: 40px;
+}
+#scroll-text {
+    /* animation properties */
+    font-size: 30px;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 20s linear infinite;
+}
+  
+/* for Firefox */
+@-moz-keyframes my-animation {
+from { -moz-transform: translateX(100%); }
+to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
+}
+  
+@keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
     }
 }
 
