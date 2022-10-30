@@ -30,8 +30,17 @@ function indexHeader() {
     `;
     column.innerHTML = `
     <iframe width="666" height="315" src="https://www.youtube.com/embed/jc8y61pfQ6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>
-    </p>`
+                <h2>
+                    Eden Is
+                </h2>
+                <h3>
+                    the Valhalla Bass Sophomore Album <a href="https://open.spotify.com/album/5WgB2vjScpz0EoFey3Aj3M">streaming</a> now!!!!!!
+                </h3>
+                <div class="zoom" >
+                <a href="https://valhallabass.bandcamp.com/album/eden-is">
+                    <img src="public/media/Edenis.jpeg"/>
+                </a>
+                </div>`
 }
 
 chronicleButton.addEventListener("click", chronicle);
