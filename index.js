@@ -15,9 +15,9 @@ function chronicle() {
             <p></p>
             <img src="public/media/oppbox.jpg"/>
             <p></p>
-            <img src="public/media/fisheyecowboy.png"/>
+            <img src="public/media/playingwgirls.jpg"/>
             <p></p>
-            <img src="public/media/cowboysinging3.png"/>
+            <img src="public/media/cowboysinging.jpg"/>
             <p></p>
             `
         console.log('changedheader');
